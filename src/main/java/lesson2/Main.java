@@ -16,6 +16,11 @@ public class Main {
         System.out.println(5);
 
     }
+
+    public static double sum(int a, boolean b) {
+        int x = 5;
+        return x;
+    }
 }
 
 
