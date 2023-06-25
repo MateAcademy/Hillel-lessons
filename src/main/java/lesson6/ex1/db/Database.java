@@ -1,6 +1,6 @@
-package lesson6.db;
+package lesson6.ex1.db;
 
-import lesson6.model.Student;
+import lesson6.ex1.model.Student;
 
 /**
  * @author Serhii Klunniy

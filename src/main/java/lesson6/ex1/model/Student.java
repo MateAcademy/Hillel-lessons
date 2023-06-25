@@ -1,4 +1,4 @@
-package lesson6.model;
+package lesson6.ex1.model;
 
 import java.util.Objects;
 

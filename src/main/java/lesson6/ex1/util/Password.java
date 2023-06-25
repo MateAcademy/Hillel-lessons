@@ -1,4 +1,4 @@
-package lesson6.util;
+package lesson6.ex1.util;
 
 /**
  * @author Serhii Klunniy

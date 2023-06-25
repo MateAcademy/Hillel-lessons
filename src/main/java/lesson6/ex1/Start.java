@@ -1,10 +1,9 @@
-package lesson6;
+package lesson6.ex1;
 
-import lesson6.db.Database;
-import lesson6.model.Student;
-import lesson6.util.Password;
+import lesson6.ex1.db.Database;
+import lesson6.ex1.model.Student;
+import lesson6.ex1.util.Password;
 
-import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
 
