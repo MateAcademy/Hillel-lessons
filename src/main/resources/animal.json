@@ -1,16 +1,1 @@
-[
-  {
-    "nikName": "sharik",
-    "dateOfArrival": "2015.03.11",
-    "age": 7,
-    "gender": false,
-    "bread": "doberman"
-  },
-  {
-    "nikName": "murka",
-    "dateOfArrival": "2016.08.13",
-    "age": 6,
-    "gender": false,
-    "bread": "persian"
-  }
-]
+{"nikName":"sharik","dateOfArrival":"2015.03.11","age":7,"gender":false,"bread":"doberman"}
