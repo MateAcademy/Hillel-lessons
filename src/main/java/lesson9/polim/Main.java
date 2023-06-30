@@ -1,7 +1,5 @@
 package lesson9.polim;
 
-import hillel.model.Animal;
-
 /**
  * @author Serhii Klunniy
  */

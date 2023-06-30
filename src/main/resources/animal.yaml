@@ -1,11 +1,6 @@
 ---
-- nikName: "myrka"
-  dateOfArrival: "2016.04.20"
-  age: 7
-  gender: false
-  bread: "persian"
-- nikName: "sharik"
-  dateOfArrival: "2015.03.11"
-  age: 7
-  gender: false
-  bread: "doberman"
+nikName: "sharik"
+dateOfArrival: "2015.03.11"
+age: 7
+gender: false
+bread: "doberman"

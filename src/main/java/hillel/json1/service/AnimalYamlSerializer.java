@@ -1,8 +1,7 @@
-package hillel.service;
+package hillel.json1.service;
 
-import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
-import hillel.model.Animal;
+import hillel.json1.model.Animal;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,6 +1,7 @@
-package hillel.service;
+package hillel.jeson1.service;
 
-import hillel.model.Animal;
+import hillel.json1.model.Animal;
+import hillel.json1.service.AnimalXmlSerializer;
 import org.junit.Assert;
 import org.junit.Test;
 

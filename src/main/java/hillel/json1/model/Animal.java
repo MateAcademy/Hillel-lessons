@@ -1,4 +1,4 @@
-package hillel.model;
+package hillel.json1.model;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

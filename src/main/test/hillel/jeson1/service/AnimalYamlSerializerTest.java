@@ -1,39 +1,36 @@
-package hillel.service;
+package hillel.jeson1.service;
 
-import com.fasterxml.jackson.databind.json.JsonMapper;
-import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
-import hillel.model.Animal;
+import hillel.json1.model.Animal;
+import hillel.json1.service.AnimalYamlSerializer;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.Assert.*;
-
 /**
  * @author Serhii Klunniy
  */
-public class AnimalSerializerTest {
+public class AnimalYamlSerializerTest {
 
-    private final AnimalSerializer animalSerializer = new AnimalSerializer(new YAMLMapper());
+    private final AnimalYamlSerializer animalYamlSerializer = new AnimalYamlSerializer();
     private final Animal dog = new Animal("sharik", "2015.03.11", 7, false, "doberman");
     private final Animal cat = new Animal("myrka", "2016.04.20", 7, false, "persian");
 
 
     @Test
     public void serializeTest() {
-        animalSerializer.serialize(dog);
+        animalYamlSerializer.serialize(dog);
     }
 
     @Test
     public void serializeListTest() {
-        animalSerializer.serialize(List.of(cat, dog));
+        animalYamlSerializer.serialize(List.of(cat, dog));
     }
 
     @Test
     public void deserializeTest() {
-        Optional<Animal> deserialize = animalSerializer.deserialize();
+        Optional<Animal> deserialize = animalYamlSerializer.deserialize();
         Assert.assertEquals(dog, deserialize.orElse(null));
     }
 }

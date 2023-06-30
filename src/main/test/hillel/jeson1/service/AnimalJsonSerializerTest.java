@@ -1,6 +1,7 @@
-package hillel.service;
+package hillel.jeson1.service;
 
-import hillel.model.Animal;
+import hillel.json1.model.Animal;
+import hillel.json1.service.AnimalJsonSerializer;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,26 +11,26 @@ import java.util.Optional;
 /**
  * @author Serhii Klunniy
  */
-public class AnimalYamlSerializerTest {
+public class AnimalJsonSerializerTest {
 
-    private final AnimalYamlSerializer animalYamlSerializer = new AnimalYamlSerializer();
+    private final AnimalJsonSerializer animalJsonSerializer = new AnimalJsonSerializer();
     private final Animal dog = new Animal("sharik", "2015.03.11", 7, false, "doberman");
     private final Animal cat = new Animal("myrka", "2016.04.20", 7, false, "persian");
 
 
     @Test
     public void serializeTest() {
-        animalYamlSerializer.serialize(dog);
+        animalJsonSerializer.serialize(dog);
     }
 
     @Test
     public void serializeListTest() {
-        animalYamlSerializer.serialize(List.of(cat, dog));
+        animalJsonSerializer.serialize(List.of(cat, dog));
     }
 
     @Test
     public void deserializeTest() {
-        Optional<Animal> deserialize = animalYamlSerializer.deserialize();
+        Optional<Animal> deserialize = animalJsonSerializer.deserialize();
         Assert.assertEquals(dog, deserialize.orElse(null));
     }
 }
