@@ -15,7 +15,7 @@ public class AnimalXmlSerializer {
     public void serialize(Animal animal) {
         XmlMapper xmlMapper = new XmlMapper();
         try {
-            xmlMapper.writeValue(new File("src/main/resources/animal.json"), animal);
+            xmlMapper.writeValue(new File("src/main/resources/animal.xml"), animal);
         } catch (IOException e) {
             System.out.println("cannot write file");
             e.printStackTrace();

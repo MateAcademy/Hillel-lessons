@@ -14,6 +14,7 @@ public class JacksonJsonProcessor implements JsonProcessor {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     public JacksonJsonProcessor() {
+        //По умолчанию ObjectMapper этого не делает, а вот если мы подключили новый модуль
         objectMapper.findAndRegisterModules();
     }
 
@@ -46,12 +47,13 @@ public class JacksonJsonProcessor implements JsonProcessor {
 
     @Override
     public String getUserName(String json) {
-        JsonNode jsonNode = null;
+        JsonNode node = null;
         try {
-            jsonNode = objectMapper.readTree(json);
+            node = objectMapper.readTree(json);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-        return jsonNode.get("name").textValue();
+        return node.get("name").textValue();
     }
+
 }

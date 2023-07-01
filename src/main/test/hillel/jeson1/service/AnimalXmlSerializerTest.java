@@ -1,6 +1,7 @@
 package hillel.jeson1.service;
 
 import hillel.json1.model.Animal;
+import hillel.json1.model.Type;
 import hillel.json1.service.AnimalXmlSerializer;
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,7 +14,8 @@ import java.util.Optional;
 public class AnimalXmlSerializerTest {
 
     private final AnimalXmlSerializer animalXmlSerializer = new AnimalXmlSerializer();
-    private final Animal input = new Animal("sharik", "2015.03.11", 7, false, "doberman");
+    private final Animal input = new Animal("sharik", "2015.03.11", 7,
+            false, "doberman", new Type(1, "root", "text"));
 
 
     @Test

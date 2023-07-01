@@ -1,1 +1,1 @@
-{"nikName":"sharik","dateOfArrival":"2015.03.11","age":7,"gender":false,"bread":"doberman"}
+<Animal><nikName>sharik</nikName><dateOfArrival>2015.03.11</dateOfArrival><age>7</age><gender>false</gender><bread>doberman</bread><arrayList><arrayList><id>1</id><name>first</name><string>string1</string></arrayList><arrayList><id>2</id><name>second</name><string>string2</string></arrayList><arrayList><id>3</id><name>therd</name><string>string3</string></arrayList></arrayList></Animal>

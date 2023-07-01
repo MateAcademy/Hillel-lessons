@@ -20,6 +20,7 @@ public class AnimalJsonSerializerTest {
 
     @Test
     public void serializeTest() {
+
         animalJsonSerializer.serialize(dog);
     }
 
