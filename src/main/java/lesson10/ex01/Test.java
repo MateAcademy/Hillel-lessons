@@ -22,7 +22,7 @@ public class Test {
         // extends  - мы можем брать в коллекцию
         // super    - мы можем класть из коллекции обьекты
 
-        Collections.copy();
+       // Collections.copy();
     }
 }
 
