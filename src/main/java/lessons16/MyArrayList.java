@@ -49,9 +49,7 @@ public class MyArrayList<T> implements MyList<T> {
             for (int i = 0, j = size; i < list.size(); i++, j++) {
                 arr[j] = list.get(i);
             }
-
             size = size + list.size();
-
         }
     }
 
@@ -90,7 +88,7 @@ public class MyArrayList<T> implements MyList<T> {
 
         for (int i = 0; i < size; i++) {
             if (arr[i].equals(t)) {
-                System.arraycopy(arr, i + 1, arr, i, arr.length - i - 1 );
+                System.arraycopy(arr, i + 1, arr, i, arr.length - i - 1);
                 size--;
                 return t;
             }
